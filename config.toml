@@ -1,0 +1,35 @@
+baseURL = 'http://arthur.kalikiti.net/'
+languageCode = 'en-us'
+title = 'Arthurian Realm'
+theme = 'hugo-theme-shell'
+
+[Params]
+  description = "Arthur Kalikiti's Online Spot"
+  [Params.Terminal]
+  scheme = "shell-ubuntu"
+  userName = "arthur"
+  userFullName = "Arthur Kalikiti"
+  pcName = "dev-machine"
+  workDir = "works"
+  contactDir = "contact_me"
+  profile = "profile.txt"
+  contactFile = "contacts.txt"
+  description = """
+  Hi I am Arthur Kalikiti!
+  I build cloud infrastructure!
+
+  """
+
+  [Params.Tree]
+  use = true
+  folderName = "my_activities"
+  files = [ 
+    ["Kubernetes", "kubernetes.md"],
+    ["Systems Architect", "architect.md"],
+    ["Linux Geek", "linux.md"],
+    ["Open Source Enthusiaste", "opensource.md"],
+  ]
+  contact = [
+    ["Email: arthur@kalikiti.net", "mailto:arthur@kalikiti.net"],
+    ["Twitter: @ArthurKalikiti", "https://twitter.com/arthurkalikiti"],
+  ]
