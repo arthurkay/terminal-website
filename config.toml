@@ -15,9 +15,10 @@ theme = 'hugo-theme-shell'
   profile = "profile.txt"
   contactFile = "contacts.txt"
   description = """
-  Hi I am Arthur Kalikiti!
+  I do DevOps!
+  I create software and infrastructure for internet-scale applications.
   I build cloud infrastructure!
-
+  
   """
 
   [Params.Tree]
