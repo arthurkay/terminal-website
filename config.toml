@@ -6,7 +6,7 @@ theme = 'hugo-theme-shell'
 [Params]
   description = "Arthur Kalikiti's Online Spot"
   [Params.Terminal]
-  scheme = "shell-ubuntu"
+  scheme = "Dracula"
   userName = "arthur"
   userFullName = "Arthur Kalikiti"
   pcName = "dev-machine"

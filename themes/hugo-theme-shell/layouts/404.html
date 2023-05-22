@@ -1,7 +1,12 @@
 {{ define "main" }}
   <main id="main">
     <div>
+      {{ $env := printf "<strong><span id='user'>%s@%s</span><span id='terminal'>:</span><span id='dir'>~/%s</span></strong><span id='terminal'>$</span>" .Site.Params.Terminal.userName .Site.Params.Terminal.pcName "ERROR: 404 command not found" | safeHTML }}
       <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
+      {{ $ps1Delay := $.Site.Params.Terminal.ps1Delay }}
+      {{ $stdoutDelay :=  $.Site.Params.Terminal.stdoutDelay }}
+      {{ $commandDelay := $.Site.Params.Terminal.commandDelay }}
+      {{ partial "partials/type404.html" (dict "context" . "env" $env "ps1delay" $ps1Delay "stdoutdelay" $stdoutDelay "commanddelay" $commandDelay) }}
     </div>
   </main>
 {{ end }}
